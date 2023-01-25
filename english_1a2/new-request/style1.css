@@ -1,0 +1,246 @@
+/*This website was created by Al Hayy Castellá García and ChatGPT as advisor and counsellor. Please, don't copy this code without commenting on the origin of the project and its creators.*/
+/*La mayoría participaciones directas de ChatGPT en el código están señaladas, pero no todas.*/
+
+
+header {
+    display: flex;
+    min-height: 95px;
+    /*
+    background-image: radial-gradient(circle at 50% 18.25%, #39b8ef 0, #3f83a8 25%, #344e61 50%, #1e2021 75%, #000000 100%);
+    background-image: radial-gradient(circle at 45.12% -5.81%, #414f3a 0, #3d503c 3.33%, #3a503f 6.67%, #365142 10%, #335145 13.33%, #305148 16.67%, #2d524b 20%, #2b524f 23.33%, #295252 26.67%, #285155 30%, #285157 33.33%, #29515a 36.67%, #2b505c 40%, #2d505e 43.33%, #304f60 46.67%, #344e61 50%, #384d62 53.33%, #3c4c62 56.67%, #414b62 60%, #454a61 63.33%, #4a4960 66.67%, #4e485f 70%, #52475d 73.33%, #55465b 76.67%, #584558 80%, #5b4456 83.33%, #5e4353 86.67%, #604350 90%, #61434c 93.33%, #624349 96.67%, #634346 100%);
+    */
+    background-color: #696969;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logotipeimg{
+    /*height: 75px;*/
+    height: 50px;
+    align-items: center;
+    margin: 21px;
+    
+    border-radius:15%;
+    /*Tiempo de la transición en el hover*/transition-duration: 0.1s;
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.1);
+
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-image: radial-gradient(circle at 53.61% 8.77%, #5e675b 0, #5c675c 3.57%, #5a675e 7.14%, #586860 10.71%, #576861 14.29%, #566863 17.86%, #556865 21.43%, #546867 25%, #546868 28.57%, #53686a 32.14%, #54676c 35.71%, #54676d 39.29%, #55676e 42.86%, #57666f 46.43%, #586670 50%, #5a6571 53.57%, #5c6571 57.14%, #5e6471 60.71%, #606471 64.29%, #626370 67.86%, #646370 71.43%, #66626f 75%, #68626e 78.57%, #6a616d 82.14%, #6c616b 85.71%, #6e606a 89.29%, #6f6068 92.86%, #706066 96.43%, #716064 100%);
+
+}
+
+.content-box{
+    width: 100%;
+    
+}
+
+.content-box-margen{
+    margin: 90px 20% 75px 20%;
+    /*Color RGBA por ChatGPT.*/
+    background-color: rgba(185,185,185, 0.45);
+    /*background-color: #b9b9b9;*/
+    border-radius:5%;
+    min-height: 1400px;
+    box-shadow: 20px 20px 3px rgba(0, 0, 0, 0.1);
+    /*Borde
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;*/
+}
+
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: 0.2s;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+
+nav a:hover{
+    /*color: #858383;*/
+    color: #bddcfa;
+    
+    
+}
+
+/*Difrerentes hover para los botones*/
+.nav-link-defined-1:hover{
+    color:#FFFFFF;
+}
+/*+++++++*/
+
+.nav-link{
+    /*Este estilo botón ha sido reado íntegramente por ChatGPT y se han modificado algunos valores.*/
+    background-color: #afafaf; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 14px 25px; /* Espaciado interior */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Elimina decoración subrayado */
+    /*display: inline-block;  Muestra el botón como un bloque */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin: 50px; /* Espaciado exterior */
+    cursor: pointer; /* Muestra cursor como mano */
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.1);
+    
+}
+
+.nav-link:hover{
+    background-color: #353535;
+
+}
+
+/*prueba*/
+.generic-confi-image:hover{
+    /*border-radius:0%;*/
+
+    
+}
+/*+++++++*/
+
+.logotipeimg:hover{
+
+
+}
+
+
+.box{
+	min-height: calc(200vh - 90px - 200px);  
+	margin: 10px;
+	color: #FFFFFF;
+}
+
+footer{
+	height: 200px;
+    background-color: #3B3D4D;
+	align-items:flex-end;
+	display: flex;
+	font-family: Georgia;
+}
+
+#copy{
+	margin: 10px;
+    color:#FFFFFF;
+    font-size: 10px;
+}
+
+
+.need-space{
+    padding: 10px 0px;
+}
+
+
+/*Agrupar imagen a un lado y el texto al otro*/
+.text-and-image-left{
+    /*overflow:auto;*/
+    display: flex;
+    padding: 100px 140px;
+    
+}
+
+.text-and-image-right{
+    display: flex;
+    padding: 100px 350px;
+    
+}
+
+.generic-confi-image{
+    /*float: right;*/
+    height: 450px;
+    align-items: center;
+    /**/border-radius:5%;
+    /*Tiempo de la transición en el hover*/transition-duration: 0.1s;
+    
+}
+
+.generic-confi-content{
+    /*width: 100%;
+    display: inline-block;
+    vertical-align: top;*/
+    flex-direction: column;
+    /*padding: 0px 10px;*/
+    padding:  0px 30px;
+    
+}
+
+/*====================*/
+
+#formsty{
+    color: rgb(0, 0, 0);
+}
+	
+@media screen and (max-width: 850px){  /*max*/
+    header{
+        flex-direction: column;
+        /*height: 90px;*/
+    }
+    nav{
+        padding: 10px 0px;
+    
+    }
+
+    .nav-link{
+        margin: 0px;
+        
+
+    }
+
+    .content-box{
+	    width: 100%;
+        margin: 0px;
+
+    }
+
+    body{
+        /*background-color: #b9b9b9;*/
+
+    }
+
+    .content-box-margen{
+        margin: 0px 20px 75px 20px;
+        /*background-color: rgba(185,185,185, 0.4);*/
+        border-radius:0%;
+        min-height: 1400px;
+
+    }
+
+    .text-and-image-left{
+        /*overflow:auto;*/
+        display: flex;
+        padding: 100px 0px;
+    }
+    
+    .generic-confi-content{
+        padding: 10px 10px;
+    }
+    .generic-confi-image{
+        /*float: right;*/
+        height: 200px;
+    }
+}
+/**/
+@media screen and (min-width: 2000px){  /*min*/
+    .generic-confi-image{
+    	height: 850px;
+    }
+}
+
+/*Version 1.1*/
+@media screen and (min-width: 2560px){  /*min*/
+    .generic-confi-image{
+    	height: 1050px;
+    }
+    .text-and-image-left{
+        padding: 100px 327px;
+    }
+    
+}
