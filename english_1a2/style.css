@@ -1,0 +1,238 @@
+/*This website was created by Al Hayy Castellá García and ChatGPT as advisor and counsellor. Please, don't copy this code without commenting on the origin of the project and its creators.*/
+/*La mayoría participaciones directas de ChatGPT en el código están señaladas, pero no todas.*/
+
+
+header {
+    display: flex;
+    min-height: 95px;
+    background-color: #696969;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logotipeimg{
+    /*height: 75px;*/
+    height: 50px;
+    align-items: center;
+    margin: 21px;
+    
+    border-radius:15%;
+    /*Tiempo de la transición en el hover*/transition-duration: 0.1s;
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.1);
+
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-image: radial-gradient(circle at 4.59% 50%, #e3cbcd 0, #d2c1c4 16.67%, #bfb7b9 33.33%, #acacac 50%, #99a19f 66.67%, #899792 83.33%, #7a8d85 100%);
+
+}
+
+.content-box{
+    width: 100%;
+    
+}
+
+.content-box-margen{
+    margin: 90px 20% 75px 20%;
+    /*Color RGBA por ChatGPT.*/
+    background-color: rgba(185,185,185, 0.45);
+    /*background-color: #b9b9b9;*/
+    border-radius:5%;
+    min-height: 1400px;
+    box-shadow: 20px 20px 3px rgba(0, 0, 0, 0.1);
+    /*Borde
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;*/
+}
+
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: 0.2s;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+
+nav a:hover{
+    /*color: #858383;*/
+    color: #e3cbcd;
+    
+    
+}
+
+/*Difrerentes hover para los botones*/
+.nav-link-defined-1:hover{
+    color:#FFFFFF;
+}
+/*+++++++*/
+
+.nav-link{
+    /*Este estilo botón ha sido reado íntegramente por ChatGPT y se han modificado algunos valores.*/
+    background-color: #afafaf; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 14px 25px; /* Espaciado interior */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Elimina decoración subrayado */
+    /*display: inline-block;  Muestra el botón como un bloque */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin: 50px; /* Espaciado exterior */
+    cursor: pointer; /* Muestra cursor como mano */
+    box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.1);
+    
+}
+
+.nav-link:hover{
+    background-color: #353535;
+
+}
+
+/*prueba*/
+.generic-confi-image:hover{
+    /*border-radius:0%;*/
+
+    
+}
+/*+++++++*/
+
+.logotipeimg:hover{
+
+
+}
+
+
+.box{
+	min-height: calc(200vh - 90px - 200px);  
+	margin: 10px;
+	color: #FFFFFF;
+}
+
+footer{
+	height: 200px;
+    background-color: #3B3D4D;
+	align-items:flex-end;
+	display: flex;
+	font-family: Georgia;
+}
+
+#copy{
+	margin: 10px;
+    color:#FFFFFF;
+    font-size: 10px;
+}
+
+
+.need-space{
+    padding: 10px 0px;
+}
+
+
+/*Agrupar imagen a un lado y el texto al otro*/
+.text-and-image-left{
+    /*overflow:auto;*/
+    display: flex;
+    padding: 100px 140px;
+    
+}
+
+.text-and-image-right{
+    display: flex;
+    padding: 100px 350px;
+    
+}
+
+.generic-confi-image{
+    /*float: right;*/
+    height: 450px;
+    align-items: center;
+    /**/border-radius:5%;
+    /*Tiempo de la transición en el hover*/transition-duration: 0.1s;
+    
+}
+
+.generic-confi-content{
+    /*width: 100%;
+    display: inline-block;
+    vertical-align: top;*/
+    flex-direction: column;
+    /*padding: 0px 10px;*/
+    padding:  0px 30px;
+    
+}
+
+/*====================*/
+	
+@media screen and (max-width: 850px){  /*max*/
+    header{
+        flex-direction: column;
+        /*height: 90px;*/
+    }
+    nav{
+        padding: 10px 0px;
+    
+    }
+
+    .nav-link{
+        margin: 0px;
+        
+
+    }
+
+    .content-box{
+	    width: 100%;
+        margin: 0px;
+
+    }
+
+    body{
+        /*background-color: #b9b9b9;*/
+
+    }
+
+    .content-box-margen{
+        margin: 0px 20px 75px 20px;
+        /*background-color: rgba(185,185,185, 0.4);*/
+        border-radius:0%;
+        min-height: 1400px;
+
+    }
+
+    .text-and-image-left{
+        /*overflow:auto;*/
+        display: flex;
+        padding: 100px 0px;
+    }
+    
+    .generic-confi-content{
+        padding: 10px 10px;
+    }
+    .generic-confi-image{
+        /*float: right;*/
+        height: 200px;
+    }
+}
+/**/
+@media screen and (min-width: 2000px){  /*min*/
+    .generic-confi-image{
+    	height: 850px;
+    }
+}
+
+/*Version 1.1*/
+@media screen and (min-width: 2560px){  /*min*/
+    .generic-confi-image{
+    	height: 1050px;
+    }
+    .text-and-image-left{
+        padding: 100px 327px;
+    }
+    
+}
