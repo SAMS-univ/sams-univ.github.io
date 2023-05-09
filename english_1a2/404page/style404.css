@@ -15,7 +15,7 @@
 
 
 .box{
-	min-height: calc(205vh - 200px);  
+	min-height: calc(100vh - 200px);  
 	margin: 10px;
 	color: #FFFFFF;
 }
@@ -38,7 +38,7 @@ footer{
 
 h1 {
 	color: #000000;
-	font-size: 50px;
+	font-size: 100px;
 }
 
 p {
