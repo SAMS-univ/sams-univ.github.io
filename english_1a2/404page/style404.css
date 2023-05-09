@@ -33,11 +33,12 @@ footer{
 
 
 .need-space{
-    padding: 10px 0px;
+    padding: 100px 0px;
 }
 
 h1 {
 	color: #000000;
+	text-size: 50px;
 }
 
 p {
