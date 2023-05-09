@@ -16,5 +16,5 @@ $(document).ready(function(){
 */
 
 function error404() {
-    alert("404 :( \n Sorry, the page you are looking for is not available. \nThis page has been disabled\n because it is no longer considered usefu\nl to our users. Please use the navigation \nmenu or the search engine to find another \npage that may be of interest to you. \nThank you for your understanding and patience.");
+    alert("404 :( \nSorry, the page you are looking for is not available. \nThis page has been disabled \nbecause it is no longer considered useful \nto our users. Please use the navigation \nmenu or the search engine to find another \npage that may be of interest to you. \nThank you for your understanding and patience.");
 }
