@@ -17,7 +17,7 @@ body{
 }
 
 .box{
-	min-height: calc(100vh - 90 - 200px);  
+	min-height: calc(100vh - 90px - 200px);  
 	margin: 10px;
 	color: #FFFFFF;
 }
