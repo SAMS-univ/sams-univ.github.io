@@ -12,7 +12,9 @@
 }*/
 
 
-
+body{
+	margin: 0px;	
+}
 
 .box{
 	min-height: calc(100vh - 90 - 200px);  
@@ -22,10 +24,12 @@
 
 footer{
 	height: 200px;
+	align-items:flex-end;
     
 }
 header{
-	heigth: 90px;	
+	min-heigth: 90px;
+	padding: 5px;
 }
 
 #copy{
