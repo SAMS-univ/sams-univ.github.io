@@ -66,7 +66,7 @@ function searchFiles(searchTerm) {
     var pdfUrls = [
         "ruta/al/archivo1.pdf",
         "ruta/al/archivo2.pdf",
-        "ruta/al/archivo3.pdf"
+        "samsuniv.github.io/english_1a2/mediaBox/works/502011a.pdf"
         // Agrega más URLs de archivos PDF aquí
     ];
 
