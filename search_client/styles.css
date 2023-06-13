@@ -30,3 +30,15 @@ button {
 .result {
     margin-bottom: 10px;
 }
+
+.box {
+    min-height: calc(100vh - 200px);
+}
+
+.footer{
+    height: 200px;
+    /*background-color: #3B3D4D;*/
+	align-items:flex-end;
+	display: flex;
+	/*font-family: Georgia;   */
+}
