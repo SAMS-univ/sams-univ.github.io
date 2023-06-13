@@ -32,15 +32,15 @@ button {
 }
 
 .box {
-    min-height: calc(100vh - 50px);
+    min-height: calc(100vh - 100px);
 }
 
 .footer{
-    height: 50px;
+    height: 100px;
     /*background-color: #3B3D4D;*/
 	/*align-items:flex-end;*/
 	/*display: flex;*/
-	text-aling: center;
+	/*text-aling: center;*/
 	text-color: #283A7C;
 	font-family: Georgia;
 }
