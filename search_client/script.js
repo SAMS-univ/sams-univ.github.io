@@ -66,13 +66,13 @@ function searchFiles(searchTerm) {
     var pdfUrls = [
         "ruta/al/archivo1.pdf",
         "ruta/al/archivo2.pdf",
-        "../english_1a2/mediaBox/works/502011a.pdf"
+        "ruta/al/archivo3.pdf"
         // Agrega más URLs de archivos PDF aquí
     ];
 
     pdfUrls.forEach(function (pdfUrl) {
         // Cargar y procesar el archivo PDF
-        PDFJS.getDocument(pdfUrl).promise.then(function (pdf) {
+        pdfjsLib.getDocument(pdfUrl).promise.then(function (pdf) {
             var searchPromises = [];
 
             for (var i = 1; i <= pdf.numPages; i++) {
@@ -106,7 +106,7 @@ function getPageText(pdf, pageNumber, searchTerm) {
                 var pageText = textContent.items.map(function (item) {
                     return item.str;
                 }).join(" ");
-                
+
                 if (pageText.toLowerCase().includes(searchTerm.toLowerCase())) {
                     resolve(pageText);
                 } else {
