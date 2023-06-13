@@ -99,7 +99,7 @@ function searchFiles(searchTerm) {
     });
 }
 
-function getPageText(pdf, pageNumber, searchTerm) {
+/*function getPageText(pdf, pageNumber, searchTerm) {
     return new Promise(function (resolve, reject) {
         pdf.getPage(pageNumber).then(function (page) {
             page.getTextContent().then(function (textContent) {
@@ -108,6 +108,27 @@ function getPageText(pdf, pageNumber, searchTerm) {
                 }).join(" ");
 
                 if (pageText.toLowerCase().includes(searchTerm.toLowerCase())) {
+                    resolve(pageText);
+                } else {
+                    resolve(null);
+                }
+            });
+        });
+    });
+}*/
+
+//More flexible update
+function getPageText(pdf, pageNumber, searchTerm) {
+    return new Promise(function (resolve, reject) {
+        pdf.getPage(pageNumber).then(function (page) {
+            page.getTextContent().then(function (textContent) {
+                var pageText = textContent.items.map(function (item) {
+                    return item.str;
+                }).join(" ");
+
+                var regex = new RegExp(searchTerm, "gi"); // Expresión regular para la búsqueda, sin distinguir mayúsculas y minúsculas
+
+                if (pageText.match(regex)) {
                     resolve(pageText);
                 } else {
                     resolve(null);
