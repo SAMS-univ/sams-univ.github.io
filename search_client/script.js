@@ -118,7 +118,7 @@ function searchFiles(searchTerm) {
 }*/
 
 //More flexible update
-function getPageText(pdf, pageNumber, searchTerm) {
+/*function getPageText(pdf, pageNumber, searchTerm) {
     return new Promise(function (resolve, reject) {
         pdf.getPage(pageNumber).then(function (page) {
             page.getTextContent().then(function (textContent) {
@@ -129,6 +129,30 @@ function getPageText(pdf, pageNumber, searchTerm) {
                 var regex = new RegExp(searchTerm, "gi"); // Expresión regular para la búsqueda, sin distinguir mayúsculas y minúsculas
 
                 if (pageText.match(regex)) {
+                    resolve(pageText);
+                } else {
+                    resolve(null);
+                }
+            });
+        });
+    });
+}*/
+
+function getPageText(pdf, pageNumber, searchTerm) {
+    return new Promise(function (resolve, reject) {
+        pdf.getPage(pageNumber).then(function (page) {
+            page.getTextContent().then(function (textContent) {
+                var pageText = textContent.items.map(function (item) {
+                    return item.str;
+                }).join(" ");
+
+                var words = pageText.split(/\s+/); // Dividir el texto en palabras separadas por espacios
+
+                var matchedWords = words.filter(function (word) {
+                    return word.toLowerCase() === searchTerm.toLowerCase();
+                });
+
+                if (matchedWords.length > 0) {
                     resolve(pageText);
                 } else {
                     resolve(null);
