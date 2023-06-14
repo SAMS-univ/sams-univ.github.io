@@ -1,29 +1,4 @@
-/*function searchFiles(searchTerm) {
-  var resultsContainer = document.getElementById("search-results");
-  resultsContainer.innerHTML = "";
-
-  fetch("index.json")
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(index) {
-      var matchedFiles = index.filter(function(file) {
-        return file.keywords.includes(searchTerm.toLowerCase());
-      });
-
-      matchedFiles.forEach(function(file) {
-        var resultElement = document.createElement("div");
-        resultElement.classList.add("result");
-        var linkElement = document.createElement("a");
-        linkElement.setAttribute("href", file.filename);
-        linkElement.setAttribute("target", "_blank"); // Abrir el enlace en una nueva pestaña
-        linkElement.textContent = file.filename;
-        resultElement.appendChild(linkElement);
-        resultsContainer.appendChild(resultElement);
-      });
-    });
-}*/
-
+//============== Index ==================
 
 var index = [
   {
@@ -37,32 +12,9 @@ var index = [
   // Agrega más objetos de archivos aquí
 ];
 
-/*function searchFiles(searchTerm) {
-  var resultsContainer = document.getElementById("search-results");
-  resultsContainer.innerHTML = "";
+//=======================================
 
-  var matchedFiles = index.filter(function(file) {
-    return file.keywords.includes(searchTerm.toLowerCase());
-  });
-
-  matchedFiles.forEach(function(file) {
-    var resultElement = document.createElement("div");
-    resultElement.classList.add("result");
-    var linkElement = document.createElement("a");
-    linkElement.setAttribute("href", file.filename);
-    linkElement.setAttribute("target", "_blank"); // Abrir el enlace en una nueva pestaña
-    linkElement.textContent = file.filename;
-    resultElement.appendChild(linkElement);
-    resultsContainer.appendChild(resultElement);
-  });
-}*/
-
-
-/*document.getElementById("search-form").addEventListener("submit", function(event) {
-  event.preventDefault();
-  var searchTerm = document.getElementById("search-input").value;
-  searchFiles(searchTerm);
-});*/
+//================ Output ===============
 
 document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("search-form").addEventListener("submit", function(event) {
@@ -94,3 +46,74 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });  
 
+//======================================
+
+
+//===================== plugins ============================
+
+function plugin_samsearchAb() {
+    alert("Do you need more help? Try SAMSearch Ab!!!");
+}
+//==========================================================
+
+
+
+
+
+//====== Del ===========
+
+/*function searchFiles(searchTerm) {
+  var resultsContainer = document.getElementById("search-results");
+  resultsContainer.innerHTML = "";
+
+  fetch("index.json")
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(index) {
+      var matchedFiles = index.filter(function(file) {
+        return file.keywords.includes(searchTerm.toLowerCase());
+      });
+
+      matchedFiles.forEach(function(file) {
+        var resultElement = document.createElement("div");
+        resultElement.classList.add("result");
+        var linkElement = document.createElement("a");
+        linkElement.setAttribute("href", file.filename);
+        linkElement.setAttribute("target", "_blank"); // Abrir el enlace en una nueva pestaña
+        linkElement.textContent = file.filename;
+        resultElement.appendChild(linkElement);
+        resultsContainer.appendChild(resultElement);
+      });
+    });
+}*/
+
+
+/*function searchFiles(searchTerm) {
+  var resultsContainer = document.getElementById("search-results");
+  resultsContainer.innerHTML = "";
+
+  var matchedFiles = index.filter(function(file) {
+    return file.keywords.includes(searchTerm.toLowerCase());
+  });
+
+  matchedFiles.forEach(function(file) {
+    var resultElement = document.createElement("div");
+    resultElement.classList.add("result");
+    var linkElement = document.createElement("a");
+    linkElement.setAttribute("href", file.filename);
+    linkElement.setAttribute("target", "_blank"); // Abrir el enlace en una nueva pestaña
+    linkElement.textContent = file.filename;
+    resultElement.appendChild(linkElement);
+    resultsContainer.appendChild(resultElement);
+  });
+}*/
+
+
+/*document.getElementById("search-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  var searchTerm = document.getElementById("search-input").value;
+  searchFiles(searchTerm);
+});*/
+
+//======================
