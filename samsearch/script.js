@@ -58,11 +58,18 @@ var index = [
 }*/
 
 
-document.getElementById("search-form").addEventListener("submit", function(event) {
+/*document.getElementById("search-form").addEventListener("submit", function(event) {
   event.preventDefault();
   var searchTerm = document.getElementById("search-input").value;
   searchFiles(searchTerm);
-});
+});*/
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("search-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var searchTerm = document.getElementById("search-input").value;
+    searchFiles(searchTerm);
+  });
 
 function searchFiles(searchTerm) {
   // Resto del código de búsqueda aquí
