@@ -28,7 +28,7 @@
 var index = [
   {
     filename: "../english_1a2/mediaBox/works/502011a.pdf",
-    keywords: ["formas de responder a what do you do", "what", "do", "you", "do", "correct"]
+    keywords: ["formas de responder a what do you do", "what", "do", "you", "do", "correct", "al", "Hayy", "castella", "garcia", "al hayy castella garcia"]
   },
   {
     filename: "archivo2.pdf",
