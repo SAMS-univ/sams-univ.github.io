@@ -37,7 +37,35 @@ var index = [
   // Agrega más objetos de archivos aquí
 ];
 
+/*function searchFiles(searchTerm) {
+  var resultsContainer = document.getElementById("search-results");
+  resultsContainer.innerHTML = "";
+
+  var matchedFiles = index.filter(function(file) {
+    return file.keywords.includes(searchTerm.toLowerCase());
+  });
+
+  matchedFiles.forEach(function(file) {
+    var resultElement = document.createElement("div");
+    resultElement.classList.add("result");
+    var linkElement = document.createElement("a");
+    linkElement.setAttribute("href", file.filename);
+    linkElement.setAttribute("target", "_blank"); // Abrir el enlace en una nueva pestaña
+    linkElement.textContent = file.filename;
+    resultElement.appendChild(linkElement);
+    resultsContainer.appendChild(resultElement);
+  });
+}*/
+
+
+document.getElementById("search-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  var searchTerm = document.getElementById("search-input").value;
+  searchFiles(searchTerm);
+});
+
 function searchFiles(searchTerm) {
+  // Resto del código de búsqueda aquí
   var resultsContainer = document.getElementById("search-results");
   resultsContainer.innerHTML = "";
 
