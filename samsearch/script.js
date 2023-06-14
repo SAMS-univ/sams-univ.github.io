@@ -71,24 +71,26 @@ document.addEventListener("DOMContentLoaded", function() {
     searchFiles(searchTerm);
   });
 
-function searchFiles(searchTerm) {
-  // Resto del código de búsqueda aquí
-  var resultsContainer = document.getElementById("search-results");
-  resultsContainer.innerHTML = "";
+  function searchFiles(searchTerm) {
+    // Resto del código de búsqueda aquí
+    var resultsContainer = document.getElementById("search-results");
+    resultsContainer.innerHTML = "";
 
-  var matchedFiles = index.filter(function(file) {
-    return file.keywords.includes(searchTerm.toLowerCase());
-  });
+    var matchedFiles = index.filter(function(file) {
+      return file.keywords.includes(searchTerm.toLowerCase());
+    });
 
-  matchedFiles.forEach(function(file) {
-    var resultElement = document.createElement("div");
-    resultElement.classList.add("result");
-    var linkElement = document.createElement("a");
-    linkElement.setAttribute("href", file.filename);
-    linkElement.setAttribute("target", "_blank"); // Abrir el enlace en una nueva pestaña
-    linkElement.textContent = file.filename;
-    resultElement.appendChild(linkElement);
-    resultsContainer.appendChild(resultElement);
-  });
-}
+    matchedFiles.forEach(function(file) {
+      var resultElement = document.createElement("div");
+      resultElement.classList.add("result");
+      var linkElement = document.createElement("a");
+      linkElement.setAttribute("href", file.filename);
+      linkElement.setAttribute("target", "_blank"); // Abrir el enlace en una nueva pestaña
+      linkElement.textContent = file.filename;
+      resultElement.appendChild(linkElement);
+      resultsContainer.appendChild(resultElement);
+    });
+  }
+
+});  
 
