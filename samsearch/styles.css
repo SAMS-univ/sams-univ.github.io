@@ -45,3 +45,19 @@ button {
 	font-family: Georgia;
 	font-size: 4px;
 }
+
+.custom-link {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #8d8c8c;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+  
+.custom-link:hover {
+    background-color: #535353;
+    color: #fff;
+}
