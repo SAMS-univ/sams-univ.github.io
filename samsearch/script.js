@@ -18,8 +18,8 @@ var index = [
   //
 
   {
-    filename: "media/docINFINITY.pdf",
-    keywords: ["example", "sosaina", "for", "file", "2", "el gato garabato", "castella", "n-infinity"]
+    filename: "../english_1a2/mediaBox/Captura de pantalla_20230121_154517.png",
+    keywords: ["test", "foto", "england", "prueba", "3", "el gato garabato", "castella", "n-3"]
   },
   {
     filename: "media/docINFINITY.pdf",
