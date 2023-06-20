@@ -2,14 +2,20 @@
 
 var index = [
   {
-    filename: "../english_1a2/mediaBox/works/502011a.pdf",
-    keywords: ["formas de responder a what do you do", "what", "do", "you", "do", "correct", "al", "hayy", "castella", "garcia", "al hayy castella garcia"]
+    filename: "media/doc01.pdf",
+    keywords: ["formas de responder a what do you do", "what", "do", "you", "do", "correct", "al", "hayy", "castella", "garcia", "al hayy castella garcia", "n-1"]
   },
   {
     filename: "archivo2.pdf",
-    keywords: ["example", "keywords", "for", "file", "2"]
+    keywords: ["example", "keywords", "for", "file", "2", "el gato garabato", "castella", "n-2"]
   }
   // Agrega más objetos de archivos aquí
+  /*{
+    filename: "",
+    keywords: [""]
+  }*/
+
+
 ];
 
 //=======================================
@@ -42,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
       resultElement.appendChild(linkElement);
       resultsContainer.appendChild(resultElement);
     });*/
+
     function searchFiles(searchTerm) {//
       var resultsContainer = document.getElementById("search-results");
       resultsContainer.innerHTML = "";
@@ -61,8 +68,19 @@ document.addEventListener("DOMContentLoaded", function() {
     
       matchedFiles.forEach(function(file) {
         // Resto del código para mostrar los resultados
+        var resultElement = document.createElement("div");
+        resultElement.classList.add("result");
+        var linkElement = document.createElement("a");
+        linkElement.setAttribute("href", file.filename);
+        linkElement.setAttribute("target", "_blank"); // Abrir el enlace en una nueva pestaña
+        linkElement.textContent = file.filename;
+        resultElement.appendChild(linkElement);
+        resultsContainer.appendChild(resultElement);
+
+
+        
       });
-    //}//
+    //}//*/
   }
 
 });  
