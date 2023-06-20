@@ -6,7 +6,7 @@ var index = [
     keywords: ["formas de responder a what do you do", "what", "do", "you", "do", "correct", "al", "hayy", "castella", "garcia", "al hayy castella garcia", "n-1"]
   },
   {
-    filename: "archivo2.pdf",
+    filename: "media/doc02.pdf",
     keywords: ["example", "keywords", "for", "file", "2", "el gato garabato", "castella", "n-2"]
   }
   // Agrega más objetos de archivos aquí
