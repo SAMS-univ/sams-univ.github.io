@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     searchFiles(searchTerm);
   });
 
-  function searchFiles(searchTerm) {
+  /*function searchFiles(searchTerm) {
     // Resto del código de búsqueda aquí
     var resultsContainer = document.getElementById("search-results");
     resultsContainer.innerHTML = "";
@@ -41,7 +41,28 @@ document.addEventListener("DOMContentLoaded", function() {
       linkElement.textContent = file.filename;
       resultElement.appendChild(linkElement);
       resultsContainer.appendChild(resultElement);
-    });
+    });*/
+    function searchFiles(searchTerm) {//
+      var resultsContainer = document.getElementById("search-results");
+      resultsContainer.innerHTML = "";
+    
+      var matchedFiles = index.filter(function(file) {
+        // Convertir el término de búsqueda y las palabras clave a minúsculas para una comparación sin distinción entre mayúsculas y minúsculas
+        var lowercaseSearchTerm = searchTerm.toLowerCase();
+        var lowercaseKeywords = file.keywords.map(function(keyword) {
+          return keyword.toLowerCase();
+        });
+    
+        // Verificar si alguna de las palabras clave contiene el término de búsqueda
+        return lowercaseKeywords.some(function(keyword) {
+          return keyword.includes(lowercaseSearchTerm);
+        });
+      });
+    
+      matchedFiles.forEach(function(file) {
+        // Resto del código para mostrar los resultados
+      });
+    }//
   }
 
 });  
