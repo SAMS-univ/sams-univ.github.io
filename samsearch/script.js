@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
       matchedFiles.forEach(function(file) {
         // Resto del código para mostrar los resultados
       });
-    }//
+    //}//
   }
 
 });  
