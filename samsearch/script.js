@@ -77,6 +77,12 @@ document.addEventListener("DOMContentLoaded", function() {
         resultElement.appendChild(linkElement);
         resultsContainer.appendChild(resultElement);
 
+        // Agregar clases o identificadores al enlace
+        linkElement.classList.add("custom-link");
+        linkElement.id = "link-" + file.filename.replace(/[^a-zA-Z0-9]/g, "-");
+
+        resultElement.appendChild(linkElement);
+        resultsContainer.appendChild(resultElement);
 
         
       });
