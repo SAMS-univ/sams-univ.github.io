@@ -3,7 +3,7 @@
 var index = [
   {
     filename: "media/doc01.pdf",
-    keywords: ["formas de responder a what do you do", "what", "do", "you", "do", "correct", "al", "hayy", "castella", "garcia", "al hayy castella garcia", "n-1"]
+    keywords: ["formas de responder a what do you do", "what", "do", "you", "do", "correct", "al", "hayy", "castella", "garcia", "al hayy castella garcia", ,"Formas de responder a “What do you do?”Para responder a la pregunta “¿A qué te dedicas?”, en inglés, existen varias formas. Grosso modo, cinco:1.To be + a/an+ (profession) + at + (workplace)2.Work + in3.Work + at4.Work + for5.To be + inEmpecemos por la primera.“To be + a/an+ (profession) + at + (workplace)” es una estructura que describe la profesión y el lugar de trabajo:I am a teacher at a school. →Soy profesor/a en una escuela.Esta estructura cuenta con una variación simplificada: “To be + a/an+(profession)”.I am a teacher.Veamos la segunda forma.“Work + in” se utiliza para describir una industria o un sector en el que se trabaja.I work in finance. →Trabajo en finanzas. / trabajo en el sector financiero.I work in a hospital. →Trabajo en un hospital.I work in a school. →Trabajo en una escuela.En la primera forma, describíamos la profesiónyellugaren el que se realiza el trabajo, pero con esta segunda estructura no es específico el puesto que se ocupa, solo se da un sector o industria. Podría ser cualquier profesión relacionada con este sector, pero no sabemos exactamente cuál(recepcionista, vigilante, etc.).", "n-1"]
   },
   {
     filename: "media/doc02.pdf",
